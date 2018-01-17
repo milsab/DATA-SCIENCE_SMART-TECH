@@ -1,5 +1,5 @@
 # Milad Sabouri
-![Family](images/family.jpg "Family")
+![Me](images/me.jpg "Milad Sabouri")
 
 ![Interest](images/im.jpg "Iron Man")
 
