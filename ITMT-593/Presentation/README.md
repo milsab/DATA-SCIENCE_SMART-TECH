@@ -1,26 +1,20 @@
-# Smart Device Presentaion
-## Smart Wi-Fi LED Bulb
+## Smart Device Presentaion
+# Smart Wi-Fi LED Bulb
 ### Milad Sabouri
 ### Embedded Systems
 ### Illinois Tech - Spring 2018
 
 
-![Me](images/2.JPG "TP-Link Smart LED")
+![LED](images/2.JPG "TP-Link Smart LED")
 
-![Interest](images/im.jpg "Iron Man")
+## TP-Link LB130
+It uses its own built-in Wi-Fi radio to connect directly with your home's router.
+Screw in - turn on - sync up
+Android
+iOS
 
-# Where are you from?
+##Video Link
+https://www.youtube.com/watch?v=JJ9NNbS9sYI
 
-From Tehran the capital city of Iran (Persia)
 
-# IT Interest
-
-My background is in Software Engineering. First, I worked with C# and .NET technology. Then I switched to Java Technology. Also, I know how to program in Node.js 
-
-# Something Interesting About You
-
-I used to practice Kung Fu when I was a student. My grade is purple. ;)
-
-# Git tutorial
-
-![Git Tutorial](images/GitBadge.png "Result")
+![LED](images/1.JPG "Application")
