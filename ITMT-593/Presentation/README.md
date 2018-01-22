@@ -1,10 +1,10 @@
-## Smart Device Presentaion
+# Smart Device Presentaion
 # Smart Wi-Fi LED Bulb
-### Milad Sabouri
-### Embedded Systems
-### Illinois Tech - Spring 2018
+#### Milad Sabouri
+#### Embedded Systems
+#### Illinois Tech - Spring 2018
 
-![LED](images/2.JPG "TP-Link Smart LED")
+![LED](images/2.jpg "TP-Link Smart LED")
 
 ## TP-Link LB130
 It uses its own built-in Wi-Fi radio to connect directly with your home's router.
@@ -17,4 +17,4 @@ iOS
 ## Video Link
 https://www.youtube.com/watch?v=JJ9NNbS9sYI
 
-![LED](images/1.JPG "Application")
+![LED](images/1.jpg "Application")
