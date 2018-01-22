@@ -1,8 +1,8 @@
-## Smart Device Presentaion
+# Smart Device Presentaion
 # Smart Wi-Fi LED Bulb
 ### Milad Sabouri
-### Embedded Systems
-### Illinois Tech - Spring 2018
+#### Embedded Systems
+#### Illinois Tech - Spring 2018
 
 
 ![LED](images/2.JPG "TP-Link Smart LED")
@@ -13,7 +13,7 @@ Screw in - turn on - sync up
 Android
 iOS
 
-##Video Link
+## Video Link
 https://www.youtube.com/watch?v=JJ9NNbS9sYI
 
 
