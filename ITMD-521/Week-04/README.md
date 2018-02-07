@@ -37,7 +37,7 @@ Clone this repo to your system, add this file to a folder named Week-04 (mind th
 
 ### Deliverable 1
 
-![Part 1](images/1.jpg "Part 1 - Hadoop")
+![Part 1](images/1.jpg "Part 1 - Hadoop Processing")
 
 ### Devliverable 2
 
