@@ -7,9 +7,6 @@ This project replicates the Simon Game with Arduino Platform.
 ![First](images/1.jpg "Simon Game")
 ## Features
 
-### Clock Simulation
-This project simulates the clock. It means that player should finish each level in specific period of time. If he cannot finish the current level in specific duration the game goes to GAMEOVER state. In this state, program shows a message on LCD that if player wants to start again, he has to push the start button.
-
 ### Start / Restart Button
 At beginning player should push the pushbutton. this button connects to A5 analog pin on Arduino.
 
@@ -26,6 +23,11 @@ The LCD shows the status of the game in each state. It includes Levels, PASS/FAI
 
 #### Example 3
 ![Victory](images/5.JPG "Victory")
+
+## Additional Features
+
+### Clock Simulation
+This project simulates the clock. It means that player should finish each level in specific period of time. If he cannot finish the current level in specific duration the game goes to GAMEOVER state. In this state, program shows a message on LCD that if player wants to start again, he has to push the start button.
 
 ## Diagram
 The diagram of the board looks like this
