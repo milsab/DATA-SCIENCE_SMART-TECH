@@ -23,3 +23,10 @@ The LCD shows the status of the game in each state. It includes Levels, PASS/FAI
 
 #### Example 2
 ![RESTART](images/4.JPG "RESTART")
+
+#### Example 3
+![Victory](images/5.JPG "Victory")
+
+## Diagram
+The diagram of the board looks like this
+![Diagram](images/Diagram.png "Diagram")
