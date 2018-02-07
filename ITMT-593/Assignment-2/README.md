@@ -29,4 +29,4 @@ The LCD shows the status of the game in each state. It includes Levels, PASS/FAI
 
 ## Diagram
 The diagram of the board looks like this
-![Diagram](images/Diagram.png "Diagram")
+![Diagram](images/diagram.png "Diagram")
