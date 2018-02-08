@@ -35,12 +35,12 @@ with open("1985.txt") as file:
         try:
             cur.execute(command, data)
         except:
-            print("Error to insert in Line: ")
+            print("Error to insert data")
         if i % 100000 == 0:
             try:
                 db.commit()
             except:
-                print("Error to commit in Line: ")
+                print("Error to commit")
 try:
     db.commit()
     print("All Data Successfully Transfered to MySQL!")
