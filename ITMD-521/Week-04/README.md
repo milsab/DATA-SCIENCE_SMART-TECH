@@ -45,6 +45,6 @@ Clone this repo to your system, add this file to a folder named Week-04 (mind th
 
 ### Additional Notes
 
-I parsed the data file and inserted them into MySQL using Python3 and mysql.connector. 
+I parsed the data and inserted them into MySQL using Python3 and mysql.connector. 
 To install mysql.connector I used "sudo apt-get install python3-mysql.connector"  
 
