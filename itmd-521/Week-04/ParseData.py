@@ -27,7 +27,11 @@ with open("1985.txt") as file:
         wind = line[60:63]
         quality = line[63:64]
         visibility = line[78:84]
-        temperature = line[87:92]
+        # handle the + sign in temperature
+        if line[87] == '+':
+            temperature = line[88:92]
+        else:
+            temperature = line[87:92]
         dewPoint = line[93:98]
         atmosphericPressure = line[99:104]
         data = (us_station, wb_station, date, hour, latitude, longitude, kind, elevation, wind, quality, visibility, temperature, dewPoint, atmosphericPressure)
@@ -36,6 +40,7 @@ with open("1985.txt") as file:
             cur.execute(command, data)
         except:
             print("Error to insert data")
+        # every 100000 insert commit to the databae
         if i % 100000 == 0:
             try:
                 db.commit()
