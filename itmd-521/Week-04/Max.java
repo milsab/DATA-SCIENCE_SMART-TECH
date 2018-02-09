@@ -14,7 +14,7 @@ public class Max
       String myUrl = "jdbc:mysql://localhost/itmd521?useSSL=false";
       conn = DriverManager.getConnection(myUrl, "root", "itmd521");
 
-      String query = "SELECT max(temperature) AS max FROM records;";
+      String query = "SELECT max(temperature) AS max FROM records where temperature not in (9999);";
 
       Statement st = conn.createStatement();
       
