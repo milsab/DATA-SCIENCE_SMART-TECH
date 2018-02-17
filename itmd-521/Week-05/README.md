@@ -22,7 +22,7 @@ vagrant@itmd521:/$ sqoop import --connect jdbc:mysql://localhost/itmd521 --table
 
 ### Deliverable 2
 
-![Part 2](images/1.jpg "Part 2 - The 10 last records")
+![Part 2](images/part2.jpg "Part 2 - The 10 last records")
 
 ### Additional Notes
 * The Database name is itmd521.
