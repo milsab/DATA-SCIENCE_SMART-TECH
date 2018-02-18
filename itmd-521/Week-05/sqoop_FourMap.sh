@@ -1,0 +1,1 @@
+sqoop import --connect jdbc:mysql://localhost/itmd521 --table records -m 4 --username root -P --where "temperature >= 380 and temperature <> 9999" --target-dir /HW5/9

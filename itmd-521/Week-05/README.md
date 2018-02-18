@@ -18,12 +18,25 @@ Include a the command you used to generate the output in a file named: ```sqoop.
 
 ### Deliverable 1
 
-vagrant@itmd521:/$ sqoop import --connect jdbc:mysql://localhost/itmd521 --table records -m 1 --username root -P --where "temperature >= 380 and temperature <> 9999" --target-dir /HW5/5
+#### One Map Task:
+sqoop import --connect jdbc:mysql://localhost/itmd521 --table records -m 1 --username root -P --where "temperature >= 380 and temperature <> 9999" --target-dir /HW5/8
+
+#### Four Map Tasks:
+sqoop import --connect jdbc:mysql://localhost/itmd521 --table records -m 4 --username root -P --where "temperature >= 380 and temperature <> 9999" --target-dir /HW5/9
+
 
 ### Deliverable 2
 
-![Part 2](images/part2.jpg "Part 2 - The 10 last records")
+#### Result According to one Map task (-m 1)
+![Part 2](images/part2.jpg "Part 2 - The 10 last records, According to 1 map task")
+
+#### Result According to four Map tasks (-m 4)
+![Part 2](images/four_mr.jpg "Part 2 - The 10 last records, According to 4 map task")
 
 ### Additional Notes
 * The Database name is itmd521.
-* 12th column is temperature. 
+* 13th column is temperature. 
+* I used the condition "temperature >= 380" because according to the dataset description in the book the temperature is Celsius * 10 so 38 degree Celsius in the dataset is equivalent of 380 
+* When I imported data to MySql, I had not included id column in the table. So, to use more than one Map task I added one id column to records table with the following command:
+** ALTER TABLE records ADD id int NOT NULL AUTO_INCREMENT primary key FIRST;
+* The first screenshot is the result for one Map task (-m 1) and the second screenshot is the result for four Map tasks (-m 4)
