@@ -47,6 +47,7 @@ Clone this repo to your system, add this file to a folder named Week-04 (mind th
 #### MySQL Notes
 * **ATTENTION:** the *Table Name* in MySQL is "**itmd521**" because MySql didn't allow me to create a table with the name of 521
 * To create the table I used **int** for **Temperature** and varchar for other columns
+* GenerateDataBase.sql file includes the scripts which I used to create the database
 #### Python Notes
 * I parsed the data and inserted them into MySQL using **Python3** and **mysql.connector**. 
 * To install mysql.connector I used "**sudo apt-get install python3-mysql.connector**"  
