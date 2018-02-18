@@ -11,7 +11,7 @@ command = ("INSERT INTO records "
                "(us_station, wb_station, date, hour, latitude, longitude, kind, elevation, wind, quality, visibility, temperature, dew, pressure) "
                "VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)")
 
-with open("1985.txt") as file:
+with open("1985.txt", encoding='windows-1252') as file:
     i = 0
     for line in file:
         i = i + 1
@@ -40,7 +40,7 @@ with open("1985.txt") as file:
             cur.execute(command, data)
         except:
             print("Error to insert data")
-        # every 100000 insert commit to the databae
+        # every 100000 insert commit to the database
         if i % 100000 == 0:
             try:
                 db.commit()
