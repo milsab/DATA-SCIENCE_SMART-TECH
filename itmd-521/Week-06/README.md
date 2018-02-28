@@ -34,7 +34,7 @@ Repeat the work above this time add a ```WHERE``` clause selecting only record n
 
 
 ### Deliverable 2
-
+![Part 2](images/part2.jpg "Part 2 - Average Temperature for 1985 with where conditions")
 
 ### Notes
 * Dataset comes from **1985**.txt
