@@ -1,8 +1,8 @@
 /*
 ** Developed By: Milad Sabouri
 ** A20389859
-** HW-06
-** Part 1
+** HW-06 
+** Part 2 - Includeing Where Clause
 */
 
 
@@ -18,7 +18,7 @@ import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
 import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 import org.apache.hadoop.util.*;
 
-public class AvgTemperature extends Configured implements Tool {
+public class AvgTemperatureLimit extends Configured implements Tool {
 
   public static class AvgTempMapper
       extends Mapper<LongWritable, Text, LongWritable, Record> {
@@ -34,12 +34,15 @@ public class AvgTemperature extends Configured implements Tool {
         return;
       }
 
+      Integer id = record.get_id();
       Integer temperature = record.get_temperature();
+      
       if (null == temperature) {
         return;
       } else {
-        //Filter unvalidated data
-        if (temperature.intValue() != 9999) {
+        //Implement the where clause conditions here in the Map function
+        //ATTENSION: 2 Celcius is going to 20 and 200 Celcius is going to 200 according to Data Set Description
+        if (temperature.intValue() != 9999 && temperature.intValue() >= 20 && temperature.intValue() <= 200 && id.intValue() >= 1000 && id.intValue() <= 5000) {
           avgTemp = record;
         }
       }
@@ -78,13 +81,13 @@ public class AvgTemperature extends Configured implements Tool {
   public int run(String [] args) throws Exception {
     Job job = new Job(getConf());
 
-    job.setJarByClass(AvgTemperature.class);
+    job.setJarByClass(AvgTemperatureLimit.class);
 
     job.setMapperClass(AvgTempMapper.class);
     job.setReducerClass(AvgTempReducer.class);
 
-    FileInputFormat.addInputPath(job, new Path("records"));
-    FileOutputFormat.setOutputPath(job, new Path("avgtemp"));
+    FileInputFormat.addInputPath(job, new Path("records_part2"));
+    FileOutputFormat.setOutputPath(job, new Path("avgtemp_part2"));
 
     job.setMapOutputKeyClass(LongWritable.class);
     job.setMapOutputValueClass(Record.class);
@@ -102,7 +105,7 @@ public class AvgTemperature extends Configured implements Tool {
   }
 
   public static void main(String [] args) throws Exception {
-    int ret = ToolRunner.run(new AvgTemperature(), args);
+    int ret = ToolRunner.run(new AvgTemperatureLimit(), args);
     System.exit(ret);
   }
 }
