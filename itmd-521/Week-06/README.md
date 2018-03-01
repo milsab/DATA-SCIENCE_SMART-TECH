@@ -39,6 +39,7 @@ Repeat the work above this time add a ```WHERE``` clause selecting only record n
 ### Notes
 * Dataset comes from **1985**.txt
 * The database name is itmd521
-* **AvgTemperature.java** is contains the Mapper and Reducer classes to produce the result for part 1
-* **AvgTemperatureLimit.java** is contains the Mapper and Reducer classes to produce the result for part 2
+* The results is the average temperature based on *Celsius degree * 10*
+* **AvgTemperature.java** contains the Mapper and Reducer classes to produce the result for part 1
+* **AvgTemperatureLimit.java** contains the Mapper and Reducer classes to produce the result for part 2
 
