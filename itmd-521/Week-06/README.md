@@ -45,5 +45,5 @@ Repeat the work above this time add a ```WHERE``` clause selecting only record n
 * For Part 0ne and Part Two I used two different files each file contains Mapper, Reducer, and Job: 
 	1. AvgTemperature.java** contains the Mapper and Reducer, and Job to produce the result for part 1
     2. AvgTemperatureLimit.java** contains the Mapper and Reducer, and Job to produce the result for part 2
-* **ATTENTION:** I did all data filtration and business logics (Average Calculation) in the JAVA codes according to MapReduce rules. In this process, I used some cast operations to convert data to appropriate type. Considering to this point is important that if for each casting operation there is a super small error the final result probably has some margin error to the actual answer because we have more than 30 millions of records.
+* **ATTENTION:** I did all data filtration and business logics (Average Calculation) in the JAVA codes according to MapReduce rules. In this process, I used some cast operations to convert data to appropriate type. Considering to this point in PART 2 is important that if for each casting operation there is a super small error the final result probably has some margin error to the actual answer because we have more than 30 millions of records.
 
