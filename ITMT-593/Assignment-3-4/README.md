@@ -2,7 +2,7 @@
 ## Illinois Tech - Spring 2018
 
 ## Description
-This project use Probe to find the conductivity of pure water and ionized water. According to it, shows the values including Voltage, Conductivity, Resistance, and TDS in the Serial. Also, uses the Arduino Ethernet Shield to send the values to Web Server. Moreover, it uses Bluetooth to transmit the values to Smart Phone. In addition, it saves all data to on-board SD card based on Timestamp.  
+This project uses Probe to find the conductivity of pure water and ionized water. It shows the values including Voltage, Conductivity, Resistance, and TDS in Serial Monitor. Also, uses the Arduino Ethernet Shield to send the values to Web Server. Moreover, it uses Bluetooth to transmit the values to Smart Phone. In addition, it saves all data to on-board SD card based on Timestamp.  
 
 
 ## Features
@@ -10,16 +10,16 @@ This project use Probe to find the conductivity of pure water and ionized water.
 * Use Bluetooth to transmit data to smart Phone
 * Use on-board SD card to save the data
 
-### Results for Ionized Water
+### Sample Results for Ionized Water
 ![First](images/i.png "Ionized Water")
 
-### Results for Pure Water
+### Sample Results for Pure Water
 ![Second](images/p.png "Pure Water")
 
-#### Show Data on Smart Phone Using Bluetooth
+### Show Data on Smart Phone Using Bluetooth
 ![Third](images/blu.jpg "PASS")
 
-#### DATA.txt File which is saved by on-board SD card
+### DATA.txt File which is saved by on-board SD card
 ![Third](images/data.png "PASS")
 
 ## Diagram
