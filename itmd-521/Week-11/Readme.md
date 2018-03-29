@@ -35,12 +35,22 @@ Note the execution time and graph all of the occurances (six job runs vs time to
 Using the textbook and the previous chapters, explain the effect of the reducer upon the outcomes of the job execution time from Part II in technical detail (It is faster or slower is not an acceptable answer).  Cite page sources from the book explaining how you arrived at your answer.
 
 ### Deliverable 1
-![Part 1](images/1.png "Part 1")
+![Part 1](images/Part1.png "Part 1")
 
 ### Deliverable 2
 
+#### Here it is a graph which compares the execution times (Based on Seconds) for running the job on small data set (One Year Data Set). 
+![Graph1](images/Graph_SmallData.png "Graph2")
+
+#### Here it is a graph which compares the execution times (Based on Seconds) for running the job on big data set (One Decade Data Set). 
+![Graph2](images/Graph_BigData.png "Graph2")
 
 ### Deliverable 3
+
+
+## Additional Notes
+
+* In graphs, the the vertical axis unit is seconds.
 
 
 
