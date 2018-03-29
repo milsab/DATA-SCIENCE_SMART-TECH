@@ -40,13 +40,13 @@ Using the textbook and the previous chapters, explain the effect of the reducer 
 ### Deliverable 2
 
 #### Here it is a graph which compares the execution times (Based on Seconds) for running the job on small data set (One Year Data Set). 
-![Graph1](images/Graph_SmallData.png "Graph2")
+![Graph1](images/smallData/Graph_SmallData.png "Graph2")
 
 #### Here it is a graph which compares the execution times (Based on Seconds) for running the job on big data set (One Decade Data Set). 
-![Graph2](images/Graph_BigData.png "Graph2")
+![Graph2](images/bigData/Graph_BigData.png "Graph2")
 
 ### Deliverable 3
-
+According to the above results, obviously it indicates that running the job with Combiner can reduce the execution time significantly. The reason is that Combiner behaves as a local reducer, so according to page 198 in chapter 7 of the textbook (PDF Version), "Running the combiner function makes for a more compact map output, so there is less data to write to local disk and to transfer to the reducer." Also, in the reduce side, the combiner will be run during the merge to reduce the amount of data written to disk.
 
 ## Additional Notes
 
