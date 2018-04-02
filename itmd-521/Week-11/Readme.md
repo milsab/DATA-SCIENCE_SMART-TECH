@@ -47,7 +47,7 @@ Here it is a graph which compares the execution times (Based on Seconds) for run
 Here it is a graph which compares the execution times (Based on Seconds) for running the job on big data set (One Decade Data Set). 
 ![Graph2](images/bigData/Graph_BigData.png "Graph2")
 
-#### Screen shots
+#### Results for 1 Year Dataset (SMALL DATA)
 
 ##### Small Data - First Run
 ![SmallData_R1](images/smallData/one.png "SmallData_R1")
@@ -62,6 +62,7 @@ Here it is a graph which compares the execution times (Based on Seconds) for run
 ##### Small Data - With Combiner - Third Run
 ![SmallData_CM_R3](images/smallData/combiner/three.png "SmallData_CM_R3")
 
+#### Results for 10 Years Dataset (BIG DATA)
 ##### Big Data - First Run
 ![BigData_R1](images/bigData/one.png "BigData_R1")
 ##### Big Data - Second Run
@@ -79,11 +80,15 @@ Here it is a graph which compares the execution times (Based on Seconds) for run
 
 
 ### Deliverable 3
-According to the above results, obviously it indicates that running the job with Combiner can reduce the execution time significantly. The reason is that Combiner behaves as a local reducer, so according to page 198 in chapter 7 of the textbook (PDF Version), "Running the combiner function makes for a more compact map output, so there is less data to write to local disk and to transfer to the reducer." Also, in the reduce side, the combiner will be run during the merge to reduce the amount of data written to disk.
+According to the above results, obviously it indicates that running the job with Combiner can reduce the execution time significantly. The reason is that Combiner behaves as a local reducer, so according to page 198 in chapter 7 of the textbook (PDF Version), "Running the combiner function makes for a more compact map output, so there is less data to write to local disk and to transfer to the reducer." So, it can decrease the execution time in Map side.
+On the other hand, in the reduce side, "if a combiner is specified, it will be run during the merge to reduce the amount of data written to disk." (Page 199, PDF Version). So, it can reduce the reduce execution time.
+As a result, using combiner, can reduce the job execution time significantly, specially when the data set is vary large.
 
 ## Additional Notes
 
 * In graphs, the the vertical axis unit is seconds.
+* Here there are three results for each job (Small Data without combiner, Small Data with combiner, Big Data without combiner, Big Data with Combiner)
+* There are a little bit difference in results of each run for a single job. When the number of jobs which were running at a same time was more than 10 usually it took more time to complete the job.
 
 
 
