@@ -66,6 +66,23 @@ Submit your Github repo URL to blackboard by 11:59 pm April 5th.
 
 ### Deliverable 2
 
+#### Comparing Execution Time
+
+Here it is a graph which compares the execution times (Based on Seconds) for running the job in the following 4 situations: 
+* One Reducer - Without Combiner
+* Two Reducer - With Combiner
+* One Reducer - Without Combiner
+* Two Reducer - With Combiner
+![Graph](images/part2/graph.png "Graph")
+
+##### Run Job with One Reducer
+![1-reducer](images/part2/r1_h.png "1 reducer")
+##### Run Job with Two Reducers
+![2-reducer](images/part2/r2_h.png "2 reducers")
+##### Run Job with Combiner and One Reducer
+![1reducer_combiner](images/part2/r1c_h.png "1 reducer with combiner")
+##### Run Job with Combiner and Two Reducers
+![2reducer_combiner](images/part2/r2c_h.png "2 reducers with combiner")
 
 ### Deliverable 3
 

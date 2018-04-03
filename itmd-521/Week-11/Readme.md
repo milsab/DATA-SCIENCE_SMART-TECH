@@ -80,8 +80,8 @@ Here it is a graph which compares the execution times (Based on Seconds) for run
 
 
 ### Deliverable 3
-According to the above results, obviously it indicates that running the job with Combiner can reduce the execution time significantly. The reason is that Combiner behaves as a local reducer, so according to page 198 in chapter 7 of the textbook (PDF Version), "Running the combiner function makes for a more compact map output, so there is less data to write to local disk and to transfer to the reducer." So, it can decrease the execution time in Map side.
-On the other hand, in the reduce side, "if a combiner is specified, it will be run during the merge to reduce the amount of data written to disk." (Page 199, PDF Version). So, it can reduce the reduce execution time.
+According to the above results, obviously it indicates that running the job with Combiner can reduce the execution time significantly. The reason is that Combiner behaves as a local reducer, so according to **page 198 in chapter 7 of the textbook (PDF Version)**, "Running the combiner function makes for a more compact map output, so there is less data to write to local disk and to transfer to the reducer." So, it can decrease the execution time in Map side.
+On the other hand, in the reduce side, "if a combiner is specified, it will be run during the merge to reduce the amount of data written to disk." **(Page 199, PDF Version)**. So, it can reduce the reduce execution time.
 As a result, using combiner, can reduce the job execution time significantly, specially when the data set is vary large.
 
 ## Additional Notes
