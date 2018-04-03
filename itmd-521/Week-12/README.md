@@ -84,7 +84,15 @@ Here it is a graph which compares the execution times (Based on Seconds) for run
 ##### Run Job with Combiner and Two Reducers
 ![2reducer_combiner](images/part2/r2c_h.png "2 reducers with combiner")
 
+
 ### Deliverable 3
+
+##### Hash of My Hawk ID:
+![HashID](images/md5.png "HashID")
+
+### Additional Notes
+
+* I set the my Job Names to "Misa"
 
 
 
