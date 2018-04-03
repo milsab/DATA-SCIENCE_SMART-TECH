@@ -1,5 +1,7 @@
-// cc MaxTemperatureMapper Mapper for maximum temperature example
-// vv MaxTemperatureMapper
+/*
+*   Milad Sabouri
+*   Assignment Week-12
+*/
 import java.io.IOException;
 
 import org.apache.hadoop.io.IntWritable;
@@ -26,7 +28,7 @@ public class MaxTemperatureMapper
           airTemperature = Integer.parseInt(line.substring(87, 92));
         }
         String quality = line.substring(92, 93);
-        if (airTemperature != MISSING && quality.matches("[01459]")) {
+        if (airTemperature != MISSING && quality.matches("[01459]") && Integer.parseInt(year) == 1983 )  {
           context.write(new Text(year), new IntWritable(airTemperature));
         }
     } catch(Exception e){
