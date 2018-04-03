@@ -87,12 +87,22 @@ Here it is a graph which compares the execution times (Based on Seconds) for run
 
 ### Deliverable 3
 
-##### Hash of My Hawk ID:
+#### Hash of My Hawk ID:
 ![HashID](images/md5.png "HashID")
+According to the above result, the hash of my hawk id starts with odd number so, I used the 60.txt as the first dataset.
+
+#### Results for 60.txt Dataset
+
+##### Run Job with 1 Reducer 
+![r1](images/part3/r1.png "r1")
+##### Run Job with 2 Reducers 
+![r2](images/part3/r2.png "r2")
 
 ### Additional Notes
 
 * I set the my Job Names to "Misa"
+* In Deliverable 3 I choose 60.txt file as the first dataset because according to hash hawk id, its first number was odd.
+* I Enabled **intermediate compression** to run all jobs in Deliverable 3
 
 
 
