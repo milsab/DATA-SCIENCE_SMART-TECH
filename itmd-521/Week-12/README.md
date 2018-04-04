@@ -93,10 +93,39 @@ According to the above result, the hash of my hawk id starts with odd number so,
 
 #### Results for 60.txt Dataset
 
+##### Comparing Execution Times 
+![graph_60](images/part3/graph.png "graph_60")
+
 ##### Run Job with 1 Reducer 
 ![r1](images/part3/r1.png "r1")
 ##### Run Job with 2 Reducers 
 ![r2](images/part3/r2.png "r2")
+##### Run Job with 4 Reducers 
+![r4](images/part3/r4.png "r4")
+##### Run Job with 8 Reducers 
+![r8](images/part3/r8.png "r8")
+
+##### Run Job with Combiner and 1 Reducer 
+![r1c](images/part3/r1c.png "r1c")
+##### Run Job with Combiner and 2 Reducers
+![r2c](images/part3/r2c.png "r2c")
+##### Run Job with Combiner and 4 Reducers
+![r4c](images/part3/r4c.png "r4c")
+##### Run Job with Combiner and 8 Reducers 
+![r8c](images/part3/r8c.png "r8c")
+
+#### Results for 60-90.txt Dataset
+
+##### Run Job with 1 Reducer 
+![r1](images/part3/big/r1.png "r1")
+##### Run Job with 2 Reducers 
+![r2](images/part3/big/r2.png "r2")
+##### Run Job with 4 Reducers 
+![r4](images/part3/big/r4.png "r4")
+##### Run Job with 8 Reducers 
+![r8](images/part3/big/r8.png "r8")
+
+**Chapter 5 Page 108 under "Compressing Map Output" section (PDF Version)**
 
 ### Additional Notes
 
