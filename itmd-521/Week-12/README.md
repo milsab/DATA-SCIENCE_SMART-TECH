@@ -147,6 +147,23 @@ produce at least one HDFS block’s worth of output." On the other hand, Having 
 
 * Too many reduces adversely affects the shuffle crossbar. Also, in extreme cases it results in too many small files created as the output of the job — this hurts both the NameNode and performance of subsequent Map-Reduce applications who need to process lots of small files. (Ref: https://goo.gl/jgDRHV)
 
+According to textbook **chapter 4 page 90 (PDF Version)** under section **Fair Scheduler Configuration** "The Fair Scheduler attempts to allocate resources so that all running applications get
+the same share of resources." "To understand how resources are shared between queues, imagine two users A and B,
+each with their own queue (Figure 4-4). A starts a job, and it is allocated all the resources
+available since there is no demand from B. Then B starts a job while A’s job is still
+running, and after a while each job is using half of the resources, in the way we saw
+earlier. Now if B starts a second job while the other jobs are still running, it will share
+its resources with B’s other job, so each of B’s jobs will have one-fourth of the resources,
+while A’s will continue to have half. The result is that resources are shared fairly between
+users."
+![Fair_Scheduling](images/part3/big/reason.png "Fair Scheduling")
+
+
+The reason why the execution time for running the job with 4 reducers is because according to history server, "Reducer preempted to make room for pending map attempts". It means that because the dataset was so large and
+at a same time there were a lot of other jobs was running the scheduler wait the job (bigger job) to make empty room for smaller jobs to do and after that continue to finish this job. 
+
+![Reason for R4](images/part3/big/reason.png "Reason for R4")
+
 ### Additional Notes
 
 * I set the my Job Names to "Misa"
