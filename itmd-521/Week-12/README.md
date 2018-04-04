@@ -84,6 +84,17 @@ Here it is a graph which compares the execution times (Based on Seconds) for run
 ##### Run Job with Combiner and Two Reducers
 ![2reducer_combiner](images/part2/r2c_h.png "2 reducers with combiner")
 
+#### Description
+According to textbook **Chapter 5 Page 108 under "Compressing Map Output" section (PDF Version)**, "the map output is written to disk and transferred across the network to the reducer nodes", 
+so by applying intermediate compressing we "can get performance gains simply because the volume of data to transfer is reduced." 
+Moreover, according to **textbook Page 217 on PDF Version** under section **Choosing the Number of Reducers** "Increasing the number of reducers makes the reduce phase shorter, since you get more parallelism. 
+However, if you take this too far, you can have lots of small files, which is suboptimal. 
+One rule of thumb is to aim for reducers that each run for five minutes or so, and which
+produce at least one HDFS block’s worth of output." On the other hand, Having too many or too few reduces is anti-productive:
+* Too few reduces cause undue load on the node on which the reduce is scheduled — in extreme cases, we have seen reduces processing over 100GB per-reduce. This also leads to very bad failure-recovery scenarios, since a single failed reduce, has a significant, adverse, impact on the latency of the job.
+
+* Too many reduces adversely affects the shuffle crossbar. Also, in extreme cases it results in too many small files created as the output of the job — this hurts both the NameNode and performance of subsequent Map-Reduce applications who need to process lots of small files. (Ref: https://goo.gl/jgDRHV)
+
 
 ### Deliverable 3
 
@@ -125,7 +136,16 @@ According to the above result, the hash of my hawk id starts with odd number so,
 ##### Run Job with 8 Reducers 
 ![r8](images/part3/big/r8.png "r8")
 
-**Chapter 5 Page 108 under "Compressing Map Output" section (PDF Version)**
+#### Description
+According to textbook **Chapter 5 Page 108 under "Compressing Map Output" section (PDF Version)**, "the map output is written to disk and transferred across the network to the reducer nodes", 
+so by applying intermediate compressing we "can get performance gains simply because the volume of data to transfer is reduced." 
+Moreover, according to **textbook Page 217 on PDF Version** under section **Choosing the Number of Reducers** "Increasing the number of reducers makes the reduce phase shorter, since you get more parallelism. 
+However, if you take this too far, you can have lots of small files, which is suboptimal. 
+One rule of thumb is to aim for reducers that each run for five minutes or so, and which
+produce at least one HDFS block’s worth of output." On the other hand, Having too many or too few reduces is anti-productive:
+* Too few reduces cause undue load on the node on which the reduce is scheduled — in extreme cases, we have seen reduces processing over 100GB per-reduce. This also leads to very bad failure-recovery scenarios, since a single failed reduce, has a significant, adverse, impact on the latency of the job.
+
+* Too many reduces adversely affects the shuffle crossbar. Also, in extreme cases it results in too many small files created as the output of the job — this hurts both the NameNode and performance of subsequent Map-Reduce applications who need to process lots of small files. (Ref: https://goo.gl/jgDRHV)
 
 ### Additional Notes
 
