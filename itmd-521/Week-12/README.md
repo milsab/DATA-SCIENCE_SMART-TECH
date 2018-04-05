@@ -127,6 +127,9 @@ According to the above result, the hash of my hawk id starts with odd number so,
 
 #### Results for 60-90.txt Dataset
 
+##### Comparing Execution Times 
+![graph_60](images/part3/big/graph.png "graph_60")
+
 ##### Run Job with 1 Reducer 
 ![r1](images/part3/big/r1.png "r1")
 ##### Run Job with 2 Reducers 
@@ -156,7 +159,7 @@ earlier. Now if B starts a second job while the other jobs are still running, it
 its resources with B’s other job, so each of B’s jobs will have one-fourth of the resources,
 while A’s will continue to have half. The result is that resources are shared fairly between
 users."
-![Fair_Scheduling](images/part3/big/reason.png "Fair Scheduling")
+![Fair_Scheduling](images/part3/big/scheduling.png "Fair Scheduling")
 
 
 The reason why the execution time for running the job with 4 reducers is because according to history server, "Reducer preempted to make room for pending map attempts". It means that because the dataset was so large and
