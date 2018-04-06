@@ -63,6 +63,12 @@ Submit your Github repo URL to blackboard by 11:59 pm April 5th.
 
 ### Deliverable 1
 
+Here is a part of the output which includes three countrs:
+* MALFORMED_RECORDS: Number of all records which contain invalid data or MISSING data or cause the program to throw an exception 
+* TEMPERATURE_OVER_50: number of all records which the temperature is more than 50 degree celsius
+* TOTAL_RECORDS: Total number of all records.
+![CounterOutput](images/part1/full.png "Counters Output")
+
 
 ### Deliverable 2
 
@@ -99,8 +105,10 @@ produce at least one HDFS block’s worth of output." On the other hand, Having 
 ### Deliverable 3
 
 #### Hash of My Hawk ID:
+
+According to the below result, the hash of my hawk id starts with odd number so, I used the 60.txt as the first dataset.
 ![HashID](images/md5.png "HashID")
-According to the above result, the hash of my hawk id starts with odd number so, I used the 60.txt as the first dataset.
+
 
 #### Results for 60.txt Dataset
 
@@ -169,7 +177,6 @@ at a same time there were a lot of other jobs was running the scheduler wait the
 
 ### Additional Notes
 
-* I set the my Job Names to "Misa"
 * In Deliverable 3 I choose 60.txt file as the first dataset because according to hash hawk id, its first number was odd.
 * I Enabled **intermediate compression** to run all jobs in Deliverable 3
 
