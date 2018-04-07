@@ -65,10 +65,13 @@ Submit your Github repo URL to blackboard by 11:59 pm April 5th.
 
 Here is a part of the output which includes three counters:
 * **MALFORMED_RECORDS:** Number of all records which contain invalid data or MISSING data or cause the program to throw an exception 
-* **TEMPERATURE_OVER_50:** number of all records which the temperature is more than 50 degree celsius
+* **TEMPERATURE_OVER_50:** Number of all records which the temperature is more than 50 degree celsius
 * **TOTAL_RECORDS:** Total number of all records.
 
-According to the result, the malformed records is approximately %6 of whole data so, we can conclude that the dataset is reliable. Moreover, the output of the job indicates in the above screen shot. I used 1983.txt file as dataset.
+According to the result, the malformed records is approximately %6 of whole data so, we can conclude that the dataset is reliable. 
+Moreover, the output of the job indicates in the below screen shot. I used 1983.txt file as dataset.
+Java codes which are used to do this part of the assignment are in Part_1 folder in this repo directory.
+
 ![CounterOutput](images/part1/full.png "Counters Output")
 
 
@@ -92,17 +95,23 @@ Here it is a graph which compares the execution times (**Based on Seconds**) for
 ##### Run Job with Combiner and Two Reducers
 ![2reducer_combiner](images/part2/r2c_h.png "2 reducers with combiner")
 
-#### Description
-According to textbook **Chapter 5 Page 108 under "Compressing Map Output" section (PDF Version)**, "the map output is written to disk and transferred across the network to the reducer nodes", 
-so by applying intermediate compressing we "can get performance gains simply because the volume of data to transfer is reduced." 
-Moreover, according to **textbook Page 217 on PDF Version** under section **Choosing the Number of Reducers** "Increasing the number of reducers makes the reduce phase shorter, since you get more parallelism. 
+#### Analysis the results
+According to **textbook Page 217 on PDF Version** under section **Choosing the Number of Reducers** "Increasing the number of reducers makes the reduce phase shorter, since you get more parallelism. 
 However, if you take this too far, you can have lots of small files, which is suboptimal. 
 One rule of thumb is to aim for reducers that each run for five minutes or so, and which
-produce at least one HDFS block’s worth of output." On the other hand, Having too many or too few reduces is anti-productive:
+produce at least one HDFS block’s worth of output." On the other hand, Having too many or too few reduces is anti-productive. In general we can say:
 * Too few reduces cause undue load on the node on which the reduce is scheduled — in extreme cases, we have seen reduces processing over 100GB per-reduce. This also leads to very bad failure-recovery scenarios, since a single failed reduce, has a significant, adverse, impact on the latency of the job.
 
 * Too many reduces adversely affects the shuffle crossbar. Also, in extreme cases it results in too many small files created as the output of the job — this hurts both the NameNode and performance of subsequent Map-Reduce applications who need to process lots of small files. (Ref: https://goo.gl/jgDRHV)
 
+
+In the above results, The execution times for jobs with combiner aproximately are half of the execution time for jobs without combiner, 
+because the Combiners behave as local reducers, so according to **page 198 in chapter 7 of the textbook (PDF Version)**, 
+"Running the combiner function makes for a more compact map output, so there is less data to write to local disk and to transfer to the reducer." 
+So, it can decrease the execution time in Map side. On the other hand, in the reduce side, "if a combiner is specified, it will be run during the merge to reduce the amount of data written to disk." (Page 199, PDF Version). So, it can reduce the reduce execution time. 
+As a result, using combiner, can reduce the job execution time significantly, specially when the data set is vary large.
+Moreover, the execution times for jobs with one reducer or two reducers are not so different. The reason maybe is that the amount of data in this dataset(60.txt) is not very very large and also the processing the data is very simple. It includes just finding the max number so the reducers don't have a heavy processing to calculating the result.
+###### The Java codes which are used to run the part of assignment are in the Part_2 folder of thi repo directory.
 
 ### Deliverable 3
 
@@ -152,7 +161,7 @@ According to the below result, the hash of my hawk id starts with odd number so,
 ##### Example of Output Results (Output for the job with 8 reducers)
 ![r8](images/part3/big/r8output.png "Output Result for Job with 8 Reducers")
 
-#### Description
+#### Analysis the results
 According to textbook **Chapter 5 Page 108 under "Compressing Map Output" section (PDF Version)**, "the map output is written to disk and transferred across the network to the reducer nodes", 
 so by applying intermediate compressing we "can get performance gains simply because the volume of data to transfer is reduced." 
 Moreover, according to **textbook Page 217 on PDF Version** under section **Choosing the Number of Reducers** "Increasing the number of reducers makes the reduce phase shorter, since you get more parallelism. 
