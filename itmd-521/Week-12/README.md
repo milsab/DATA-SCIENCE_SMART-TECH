@@ -182,6 +182,7 @@ at a same time there were a lot of other jobs was running the scheduler wait the
 
 ### Additional Notes
 
+* Java codes for each part are in the related folder in this Repo. For example the java codes that I used to run job in Part one is in the Part_1 folder.
 * In Deliverable 3 I choose 60.txt file as the first dataset because according to hash hawk id, its first number was odd.
 * I Enabled **intermediate compression** to run all jobs in Deliverable 3
 
