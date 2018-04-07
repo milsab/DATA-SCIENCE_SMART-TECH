@@ -64,9 +64,11 @@ Submit your Github repo URL to blackboard by 11:59 pm April 5th.
 ### Deliverable 1
 
 Here is a part of the output which includes three countrs:
-* MALFORMED_RECORDS: Number of all records which contain invalid data or MISSING data or cause the program to throw an exception 
-* TEMPERATURE_OVER_50: number of all records which the temperature is more than 50 degree celsius
-* TOTAL_RECORDS: Total number of all records.
+* **MALFORMED_RECORDS:** Number of all records which contain invalid data or MISSING data or cause the program to throw an exception 
+* **TEMPERATURE_OVER_50:** number of all records which the temperature is more than 50 degree celsius
+* **TOTAL_RECORDS:** Total number of all records.
+
+According to the result, the malformed records is approximately %6 of whole data so, we can conclude that the dataset is reliable.
 ![CounterOutput](images/part1/full.png "Counters Output")
 
 
@@ -146,6 +148,9 @@ According to the below result, the hash of my hawk id starts with odd number so,
 ![r4](images/part3/big/r4.png "r4")
 ##### Run Job with 8 Reducers 
 ![r8](images/part3/big/r8.png "r8")
+
+##### Example of Output Results (Output for the job with 8 reducers)
+![r8](images/part3/big/output.png "Output Result for Job with 8 Reducers")
 
 #### Description
 According to textbook **Chapter 5 Page 108 under "Compressing Map Output" section (PDF Version)**, "the map output is written to disk and transferred across the network to the reducer nodes", 
