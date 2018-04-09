@@ -1,15 +1,19 @@
 # Meetup Report #2
 
+
+
 ## Subject: Introduction to Distributed Big Data Processing with Hadoop
+
 
 ## Name of Group: Coding Temple
 
-### When: Wednesday, April 4, 2018 - 6:00 PM to 9:00 PM
-### Where: 222 W. Ontario Street, Suite 450 · Chicago, IL
+
+##### When: Wednesday, April 4, 2018 - 6:00 PM to 9:00 PM
+##### Where: 222 W. Ontario Street, Suite 450 · Chicago, IL
 
 
 
-### Short summary and your conclusion
+### Short summary and my conclusion
 
 This meetup included two sections: 
 * The first section was about the concept of MapReduce and intruduction to Distributed File System and Hadoop. The speaker first talked about the cluster architecture 
@@ -35,7 +39,7 @@ Spark is based on laziness execution. It means that it doesn't do anything until
 
 
  
- ### Your observations and comments about the subject.
+ ### My observations and comments about the subject.
  
  In my opinion, the meetup was very useful. I learned the following tips and concepts from this meeting:
  
