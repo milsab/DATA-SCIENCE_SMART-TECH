@@ -2,14 +2,16 @@
 
 
 
-## Subject: Introduction to Distributed Big Data Processing with Hadoop
+## Subject: **Introduction to Distributed Big Data Processing with Hadoop**
 
 
-## Name of Group: Coding Temple
+## Name of Group: **Coding Temple**
 
 
-##### When: Wednesday, April 4, 2018 - 6:00 PM to 9:00 PM
-##### Where: 222 W. Ontario Street, Suite 450 · Chicago, IL
+##### Link: https://www.meetup.com/Coding-Temple/events/248694833/
+###### When: Wednesday, April 4, 2018 - 6:00 PM to 9:00 PM
+###### Where: 222 W. Ontario Street, Suite 450 · Chicago, IL
+
 
 
 
