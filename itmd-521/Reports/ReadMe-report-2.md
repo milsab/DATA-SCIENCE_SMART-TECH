@@ -28,6 +28,9 @@ For example he described that because rows are independent in Hadoop, usually we
 #### MapReduce
 ![MapReduce](images/9.jpg "MapReduce")
 
+#### Conclusion
+Working with big data and processing it is one of the most hot challengeable topics in data management world. Hadoop and the next generation of it, Spark, have the important role in this area.
+
 
 * The second section was about introduction to Spark and showing some demo with Spark. Spark is a distributed real time analytics engine. Spark is the hottest topic in data management world.
 Spark is very faster than hadoop. Spark workson distributed data which are stored on distributed file system paradigm like hadoop. Spark is based on Scala. 
