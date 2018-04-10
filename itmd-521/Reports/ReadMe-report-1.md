@@ -17,7 +17,7 @@ The *data.cityofchicago.org* privides access to open data in JSON format. For ex
 ![CrimeData](images/1/1.png "CrimeData") 
 
 We can use https://vingkan.github.io/soql/ website to do queries on the dataset. For example, as you can see in the below picture I selected three columns from the dataset
-![SelectColumns](images/1/1.png "Select Columns")
+![SelectColumns](images/1/2.png "Select Columns")
 
 
  
