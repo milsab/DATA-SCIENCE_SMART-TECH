@@ -14,14 +14,20 @@ In this meeting, we learned how to explore Chicago government data through the C
 The Socrata provides open source public data. With *data.cityofchicago.org* we can access to open data in JSON format. For example, https://data.cityofchicago.org/resource/ktn3-fjzw.json provides open source public data about crimes in Chicago
 
 #### Sample of data in JSON format
+
 ![CrimeData](images/1/1.png "CrimeData") 
 
 We can use https://vingkan.github.io/soql/ website to do queries on the dataset. For example, as you can see in the below picture I selected three columns from the dataset.
 I used *SELECT* command to filter just three column.
+
 ![SelectColumns](images/1/2.png "Select Columns")
 
 We can find a list of all commands in the *https://dev.socrata.com/docs/functions/#2.1*
-We can Also use the *cvs* format of the data or just used the original *json* format to precess the data. 
+We can Also use the *cvs* format of the data or just used the original *json* format to precess the data. We can use this data to build something which works with that data. 
+In other words, Socrata provides a developer portal to do that. Here is the link: https://dev.socrata.com/
+
+![DeveloperPortal](images/1/3.png "Developer Portal")
+
 
 
  
