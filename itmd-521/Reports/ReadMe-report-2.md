@@ -18,8 +18,8 @@
 ### Short summary and my conclusion
 
 This meetup included two sections: 
-* The first section was about the concept of MapReduce and intruduction to Distributed File System and Hadoop. The speaker first talked about the cluster architecture 
-and then introduced concept of distibuted file systems. He explained the basic operations in relational datacases such as Filter, Join, and Aggregation (Group By) with the concept of distributed file system and MapReduce.
+* The first section was about the concept of MapReduce and introduction to Distributed File System and Hadoop. The speaker first talked about the cluster architecture 
+and then introduced concept of distributed file systems. He explained the basic operations in relational databases such as Filter, Join, and Aggregation (Group By) with the concept of distributed file system and MapReduce.
 For example he described that because rows are independent in Hadoop, usually we don't need to join in datasets.
 
 #### Hadoop Cluster
@@ -30,7 +30,7 @@ For example he described that because rows are independent in Hadoop, usually we
 
 
 * The second section was about introduction to Spark and showing some demo with Spark. Spark is a distributed real time analytics engine. Spark is the hottest topic in data management world.
-Spark is very faster than hadoop. Spark workson distributed data which are stored on distributed file system paradigm like hadoop. Spark is based on Scala. 
+Spark is very faster than hadoop. Spark works on distributed data which are stored on distributed file system paradigm like hadoop. Spark is based on Scala. 
 Spark is based on laziness execution. It means that it doesn't do anything until it counters specific command like show() or write to disk. 
 
 
