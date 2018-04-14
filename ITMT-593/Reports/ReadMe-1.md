@@ -10,15 +10,27 @@
 
 
 ### Short summary and conclusion
+
+#### 3D-Printing Prototype
+![Prototype](images/1.JPG "Prototype")
+
 The event was about usage of 3D-Printing in aerospace technologies. The speaker, Brian Stofiel, was an entrepreneur who established a startup which has developed a functional rocket nozzle that is printed using high grade 3D printing, and which is capable of carrying small payloads to high altitude. 
-The startup is called Stofiel Aerospace which is located in St. Louis. This new company create rocket nozzles with 3D-Printing. So, they are able to drive production times down to days instead of months. 
-The rockets which are built with this type of nozzles can carry small payloads to high level altitude. Moreover, Stofiel Aerospace is offering a balloon-based small satellite launcher with unique capabilities for the educational, commercial, and governmental markets.
+The startup is called Stofiel Aerospace which is located in St. Louis. 
+
+![rocket](images/11.JPG "Rocket")
+
+This new company create rocket nozzles with 3D-Printing. So, they are able to drive production times down to days instead of months. 
+The rockets which are built with this type of nozzles can carry small payloads to high level altitude. 
+Moreover, Stofiel Aerospace is offering a balloon-based small satellite launcher with unique capabilities for the educational, commercial, and governmental markets.
+
+#### Using Ballon to lunch the rocket
+![ballon](images/ballon.jpg "ballon")
+
 Their balloon carries the rocket to the atmosphere’s edge, allowing for launch site selections that would be, at best, impractical for a ground based launcher. This mobile launch system expands the range and options of orbits and missions of your payload. 
 Providing on-demand launches on the site of a critical emergency situation gives you the ability to address geographically based mission needs.
 
-One innovative action that the company does is they use 
-
-![3dprinting](images/8.png "3D Printing Rocket Nozzle") 
+### Rocket Prototype
+![3dprinting](images/8.JPG "3D Printing Rocket Nozzle") 
 
 
 
