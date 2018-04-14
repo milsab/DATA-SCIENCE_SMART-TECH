@@ -24,7 +24,7 @@ The rockets which are built with this type of nozzles can carry small payloads t
 Moreover, Stofiel Aerospace is offering a balloon-based small satellite launcher with unique capabilities for the educational, commercial, and governmental markets.
 
 #### Using Ballon to lunch the rocket
-![balloon](images/ballo0n.jpg "balloon")
+![balloon](images/balloon.jpg "balloon")
 
 Their balloon carries the rocket to the atmosphere’s edge, allowing for launch site selections that would be, at best, impractical for a ground based launcher. This mobile launch system expands the range and options of orbits and missions of your payload. 
 Providing on-demand launches on the site of a critical emergency situation gives you the ability to address geographically based mission needs.
