@@ -1,10 +1,11 @@
-
+#Milad Sabouri
 with open("1985.txt", encoding='windows-1252') as readFile, open("dataset.txt", "w") as writeFile:
     i = 0
     for line in readFile:
         i = i + 1
         if i % 1000000 == 0:
             print(i)
+        #preprocessing the longitude value
         longitude = line[34:41]
         sign = line[34:35]
         f_lon = line[36:38]
