@@ -38,12 +38,12 @@ In your Week-13 folder include all scripts and program instructions needed to re
 
 
 ### Deliverable 1
-The below is a screens hot of the out for part-00000. Also, I have uploaded the actual part-00000 file to this repository.
+The below is a screen shot of the out for part-00000. Also, I have uploaded the actual part-00000 file to this repository.
 ![output](images/output_part0.png "part-00000 file")
 
 ### Assumptions 1
 
 * First I used python to read the txt file and extract the longitude, air quality, and temperature to put them to a new text file. Also, I did the necessary data preprocessing and data filtration in this step.
 * Then, I used the python to run the job in Spark
-* I applied spark-submit --master local /vagrant/HW13/MaxTemperature.py dataset.txt output/ command to run the job in Spark.
+* I applied spark-submit --master local MaxTemperature.py dataset.txt output/ command to run the job in Spark.
 * In the output, each row represents the 10 degree of longitude. For example, (60, 592) means that the max temperature in longitude degree between 60.000 and 60.9999 is 59.2 Celsius.
