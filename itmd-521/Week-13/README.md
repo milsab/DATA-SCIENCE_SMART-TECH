@@ -92,3 +92,5 @@ Also, the below a screen shot of the part-00004 file
 * I applied spark-submit --master local MaxTemperature.py dataset.txt output/ command to run the job in Spark.
 * In the output, each row represents the 10 degree of longitude. For example, (60, 592) means that the max temperature in longitude degree between 60.000 and 60.9999 is 59.2 Celsius.
 * The acctual output files are in the output folder of this repository directory.
+* As an extra work, I run the Spark job with the java file too. I uploaded the java file as MaxTemperature.java so, totally I run the spark two times one with python and one with java just for extra work a learn more stuff by myself.
+* 
