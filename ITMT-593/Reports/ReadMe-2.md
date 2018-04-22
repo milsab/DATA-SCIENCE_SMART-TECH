@@ -31,7 +31,7 @@ Evolve Security's expertise is within Application Security, Penetration Testing,
 ### Observations and comments about the subject.
 
 In my opinion, it was a unique event because the speaker tried to explain security in a different aspect.
-The point that I learned in this event was that even if we create every smart technologies oriented in a perfect way, still there are a lot of weaknesses if we don't attention to social engineering and educating the people who work with the technologies. 
+The point that I learned in this event was that even if we create any smart technologies oriented in a perfect way, still there are a lot of weaknesses if we don't make attention to social engineering and educating the people who work with those technologies. 
 
 In other words, the hackers can penetrate to strong secure systems easily with the help of social engineering techniques. 
 
