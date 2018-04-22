@@ -5,23 +5,27 @@
 ## Subject: **A Hacker's Guide to Unauthorized Physical Access**
 
 
-## Name of Group: **EvolveSec - Cybersecurity**
+## Name of Group: **EvolveSec - CyberSecurity**
 
 
-##### Link: https://www.meetup.com/EvolveSec/events/248973309/
 ###### When: Thursday, April 19, 2018 - 6:30 PM to 8:00 PM
 ###### Where: WeWork River North, 111 West Illinois Street · Chicago, IL
+###### Link: https://www.meetup.com/EvolveSec/events/248973309/
 
-This event was held by EvolveSec meetup.  is for anyone interested in learning about cybersecurity, starting a career in the cybersecurity industry, or just networking with other cybersecurity industry professionals.
-Evolve Security is a dedicated cyber security services firm that focuses on delivering real and measurable improvements security posture. We work alongside your current security and/or IT staff to manage and resolve your security vulnerabilities throughout the full security life-cycle. Evolve Security's expertise is within Application Security, Penetration Testing, and Security Training through its Academy.
+
+### Short summary and conclusion
+
+The event was about security weaknesses and the effect of social engineering to bypass the security controls and security devices such as RFID.  
+This event was held by EvolveSec meetup. Usually, the meetups for this group are for anyone interested in learning about cyberSecurity, starting a career in the cyberSecurity industry, or just networking with other cyberSecurity industry professionals.
+In fact, Evolve Security is a dedicated Cyber Security services firm that focuses on delivering real and measurable improvements security posture.
+Evolve Security's expertise is within Application Security, Penetration Testing, and Security Training through its Academy.
  
 
 
-### Short summary and my conclusion
-
-![Spark](images/8.jpg "Spark")
-
  
- ### My observations and comments about the subject.
+### Observations and comments about the subject.
 
+In my opinion, it was a unique event because the speaker tried to explain security in a different aspect.
+The point that I learned in this event was that even if we create everything in a perfect way, still there are a lot of weakness if we don't attention to social engineering and educating the people who work with the technology. 
+In other words,
  
