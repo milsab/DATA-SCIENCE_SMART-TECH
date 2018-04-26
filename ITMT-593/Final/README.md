@@ -27,4 +27,4 @@ Moreover, I have used 14 segment LED to present the temperature.
 
 ## Diagram
 The diagram of the board looks like this
-![Diagram](images/Diagram.png "Diagram")
+![Diagram](Diagram.png "Diagram")
