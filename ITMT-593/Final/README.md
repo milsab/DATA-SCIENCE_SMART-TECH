@@ -21,13 +21,23 @@ Moreover, I have used 14 segment LED to present the temperature.
 * Use 14-segment alphanumeric LED to **present** the data
 
 ### Web Server
-![First](images/i.png "Ionized Water")
+![WebServer](images/3.png "Web Server")
+
+### Serial Port
+![SerialPort](images/1.png "SerialPort")
 
 ### Bluetooth
-![Second](images/p.png "Pure Water")
+![SmartPhone](images/13.jpg "SendToSmartPhone")
 
-### Show Data on 14-segment alphanumeric LED
-![Third](images/blu.jpg "PASS")
+### Show Data on 14-segment alphanumeric LED (Celsius Degree)
+![Third](images/4.JPG "Celsius")
+
+### Show Data on 14-segment alphanumeric LED (Fahrenheit Degree)
+![Third](images/5.JPG "Fahrenheit")
+
+
+### Video
+[HowItWorks](images/17.mp4)
 
 ## Diagram
 The diagram of the board looks like this
