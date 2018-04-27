@@ -187,7 +187,7 @@ void loop()
           client.print(temp);
           client.println(F(" Celsius </td></tr>"));
 
-          client.print(F("<tr><td><b style='color:cyan'>Humidity: </b></td><td>"));
+          client.print(F("<tr><td><b style='color:green'>Humidity: </b></td><td>"));
           client.print(hum);
           client.println(F(" % </td></tr>"));
             
