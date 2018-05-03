@@ -13,6 +13,8 @@ In Data Transmission phase, both Arduino Ethernet Shield and Adafruit BLUEFRUIT 
 In Data Presentation phase, I have used web server to present the data which are transmitted with network cable. Also, I have used android application to present the data that are transmitted via Bluetooth.
 Moreover, I have used 14 segment LED to present the temperature.
 
+Furthermore, in this project I have used a push button to change the Celsius degree to Fahrenheit degree. The point is that I connected the push button analog pin (A0) because almost all of the digital pins have been reserved by other stuff
+
 
 ## Features
 * Use DHT22 sensor to **collect** temperature and humidity
@@ -27,7 +29,7 @@ Moreover, I have used 14 segment LED to present the temperature.
 ![SerialPort](images/1.png "SerialPort")
 
 ### Bluetooth
-![SmartPhone](images/13.jpg "SendToSmartPhone")
+![SmartPhone](images/14.jpg "SendToSmartPhone")
 
 ### Show Data on 14-segment alphanumeric LED (Celsius Degree)
 ![Third](images/4.JPG "Celsius")
